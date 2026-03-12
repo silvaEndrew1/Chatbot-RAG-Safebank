@@ -1,3 +1,4 @@
+![Status](https://img.shields.io/badge/status-ativo-success)
 # 🤖 Atendimento e Suporte — Chatbot com RAG
 
 Aplicação de **Inteligência Artificial para atendimento automatizado** que utiliza **RAG (Retrieval-Augmented Generation)** para responder perguntas com base em **documentos reais da empresa**, como manuais, FAQs e bases de conhecimento.
@@ -42,20 +43,6 @@ Isso torna o chatbot **mais confiável e contextualizado**, evitando respostas g
 
 ---
 
-# 🧠 Arquitetura do Sistema
-
-Fluxo completo da aplicação:
-
-PDF → chunks → embeddings → FAISS
-                                ↓
-usuário pergunta → retriever busca chunks relevantes
-                                ↓
-            LLM recebe pergunta + chunks + histórico
-                                ↓
-                        resposta gerada
-
----
-
 # ✨ Funcionalidades
 
 - Chatbot de atendimento automatizado
@@ -79,7 +66,6 @@ Framework Python que permite criar **interfaces web interativas rapidamente**, i
 
 ### LangChain
 Framework utilizado para construir a **pipeline RAG**, conectando:
-
 - carregamento de documentos
 - geração de embeddings
 - recuperação de contexto
@@ -87,14 +73,14 @@ Framework utilizado para construir a **pipeline RAG**, conectando:
 
 ### FAISS
 Biblioteca criada pela Meta para **busca eficiente por similaridade entre vetores**.
-
 Armazena os embeddings dos documentos e retorna os mais relevantes.
 
 ### HuggingFace
 Plataforma utilizada para obter o modelo de embeddings:
 
-## Como rodar
+---
 
+## Como executar o projeto
 1. Clone o repositório
 2. Crie e ative a venv:
    ```bash
