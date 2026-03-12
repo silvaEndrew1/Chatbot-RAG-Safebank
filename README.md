@@ -1,4 +1,4 @@
-# Atendimento SafeBank — Chatbot com RAG
+# Atendimento e Suporte — Chatbot com RAG
 
 Chatbot de atendimento com recuperação de documentos (RAG) usando LangChain, Groq e Streamlit.
 
