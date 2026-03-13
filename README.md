@@ -1,4 +1,3 @@
-![Status](https://img.shields.io/badge/status-ativo-success)
 # 🤖 Atendimento e Suporte — Chatbot com RAG
 
 Aplicação de **Inteligência Artificial para atendimento automatizado** que utiliza **RAG (Retrieval-Augmented Generation)** para responder perguntas com base em **documentos reais da empresa**, como manuais, FAQs e bases de conhecimento.
