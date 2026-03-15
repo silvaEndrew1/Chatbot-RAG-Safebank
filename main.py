@@ -55,13 +55,24 @@ for message in st.session_state.chat_history:
     elif isinstance(message, HumanMessage):
         with st.chat_message("Human"):
             st.write(message.content)
+
  
 # Processa a nova mensagem quando o usuário envia algo
 if input is not None:
+
+    # Exibe a mensagem do usuário no chat
     with st.chat_message("Human"):
         st.markdown(input)
- 
+
+    # Exibe a resposta do assistente no chat
     with st.chat_message("AI"):
+
+        # Monta a chain RAG com o LLM e o retriever já configurado
         rag_chain = config_rag_chain(llm, st.session_state.retriever)
-        res = chat_llm(rag_chain, input)
+
+        # Exibe spinner enquanto o LLM processa e gera a resposta
+        with st.spinner("Aguarde..."):
+            res = chat_llm(rag_chain, input)
+
+        # Exibe a resposta gerada na interface
         st.write(res)
