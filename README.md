@@ -6,6 +6,9 @@ O projeto demonstra como construir um **chatbot corporativo baseado em conhecime
 
 Este projeto foi desenvolvido com foco em **arquitetura moderna de aplicações com LLMs**, sendo adequado como **case de portfólio em IA aplicada**.
 
+## 🎬 Demo
+![Demo](assets/demo.gif)
+
 ---
 
 # 🎯 Problema
